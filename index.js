@@ -21,3 +21,14 @@ const orderTotal = (costTotal, drink) => {
   return costTotal += drink.price;
 }
 console.log(coffeeMenu.reduce(orderTotal, 0));
+
+// 6
+
+const seasonalDrinks = coffeeMenu.filter((item) => item.seasonal);
+
+console.log(seasonalDrinks);
+
+// 7
+
+seasonalDrinks.forEach((item) => console.log(item.name, ` with imported beans`));
+
